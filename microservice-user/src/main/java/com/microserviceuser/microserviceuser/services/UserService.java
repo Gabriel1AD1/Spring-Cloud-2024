@@ -1,4 +1,4 @@
-package com.microserviceuser.microserviceuser.repository;
+package com.microserviceuser.microserviceuser.services;
 
 import com.microserviceuser.microserviceuser.models.entitys.User;
 
@@ -13,7 +13,7 @@ public interface UserService {
 
     User save(User user);
 
-    void eliminar(Long id);
+    void deleteById(Long id);
 
 
 
