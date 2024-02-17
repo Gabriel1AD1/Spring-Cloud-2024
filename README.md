@@ -2,7 +2,7 @@
 
 Este microservicio maneja operaciones relacionadas con usuarios, incluyendo la creación, actualización, eliminación y recuperación de información de usuarios. Utiliza Spring Boot y se comunica con una base de datos MySQL.
 
-#ESTADO DEL PROYECTO
+## ESTADO DEL PROYECTO
 EN PROCESO
 
 
