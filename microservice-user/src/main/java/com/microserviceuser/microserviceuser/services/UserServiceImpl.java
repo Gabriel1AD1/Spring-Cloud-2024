@@ -2,7 +2,6 @@ package com.microserviceuser.microserviceuser.services;
 
 import com.microserviceuser.microserviceuser.models.entitys.User;
 import com.microserviceuser.microserviceuser.repository.UserRepository;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -43,4 +42,21 @@ public class UserServiceImpl implements UserService{
         repository.deleteById(id);
 
     }
+
+    @Override
+    public Optional<User> findByEmail(String email) {
+        return repository.findByEmail(email);
+    }
+
+    @Override
+    public Boolean existByEmail(String Email) {
+        return repository.existsByEmail(Email);
+    }
+
+    @Override
+    public List<User> listById(Iterable<Long> id) {
+        return (List<User>) repository.findAllById(id);
+    }
+
+
 }

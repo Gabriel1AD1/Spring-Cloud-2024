@@ -17,6 +17,7 @@
 
     <modules>
         <module>microservice-user</module>
+        <module>microservice-course</module>
     </modules>
 
     <properties>
